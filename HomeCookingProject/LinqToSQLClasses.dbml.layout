@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LinqToSQLClasses">
+  <DataContextMoniker Name="/LinqToSQLClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0908a942-c0dc-42a5-95ca-ec5f4095c374" absoluteBounds="1.625, 1.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LinqToSQLClassesDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="792579a5-7197-43f2-8775-3b6c3c72ca87" absoluteBounds="1.6400000000000001, 1.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="87596cbc-0260-4aed-b651-67cb6830fbd4" absoluteBounds="4.25, 1.875, 2, 1.3862939453125">
+      <DataClassMoniker Name="/LinqToSQLClassesDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a3f8a25d-abb9-4396-a57d-a75f3e5283b7" absoluteBounds="4.265, 2.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="faf320ac-0cd2-4016-b933-2c8eda880956" absoluteBounds="4, 4, 2, 1.9631982421875">
+      <DataClassMoniker Name="/LinqToSQLClassesDataContext/Purchase" />
+      <nestedChildShapes>
+        <elementListCompartment Id="374b5442-162c-4dd6-9253-9ba738dcc3eb" absoluteBounds="4.015, 4.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.625 : 3.07859537760417); (2.625 : 4.98159912109375); (4 : 4.98159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqToSQLClassesDataContext/Customer/Customer_Purchase" />
+      <nodes>
+        <classShapeMoniker Id="0908a942-c0dc-42a5-95ca-ec5f4095c374" />
+        <classShapeMoniker Id="faf320ac-0cd2-4016-b933-2c8eda880956" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.125 : 3.2612939453125); (5.125 : 4)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqToSQLClassesDataContext/Product/Product_Purchase" />
+      <nodes>
+        <classShapeMoniker Id="87596cbc-0260-4aed-b651-67cb6830fbd4" />
+        <classShapeMoniker Id="faf320ac-0cd2-4016-b933-2c8eda880956" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
